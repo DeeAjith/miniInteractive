@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title> Webgl Bogie! </title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/info_style.css">
+    
+</head>
+
+<body>
+    <header>Interactive 3D Expo</header>
+    <ul id="nav">
+        <li class="active"><a href="index.html">Assesmbled View</a></li>
+        <li><a href="../pages/dis.html">Disassembled View</a></li>
+    </ul>
+    <div class="canv">
+        <canvas id="myCanvas"></canvas>
+    </div>
+    <div class="inst">
+        <h2>
+            Scroll to ZoomIn, out.<br>
+            Press hold leftMouse<br> button and move to see Around.<br>
+            <b class="instcont">DoubleClick on <span class="bb">Bogie</span> to Display information, <br>Single Click to reset <span class="bb">Bogie</span> position.</b>
+        </h2>
+        
+    </div>
+
+    <script src="js/three.js"></script>
+    <script src="js/CSS3DRenderer.js"></script>
+    <script src="js/PMREMCubeUVPacker.js"></script>
+    <script src="js/OrbitControls.js"></script>
+    <script src="js/PMREMGenerator.js"></script>
+    <script src="js/EquirectangularToCubeGenerator.js"></script>
+    <script src="js/RGBELoader.js"></script>
+    <script src="js/GLTFLoader.js"></script>
+    <script src="js/mainAss.js"></script>
+
+</body>
+
+</html>
