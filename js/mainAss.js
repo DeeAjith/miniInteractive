@@ -77,7 +77,6 @@ var SHADOW_MAP_WIDTH = 2048,
     light2.shadow.mapSize.width = SHADOW_MAP_WIDTH;
     light2.shadow.mapSize.height = SHADOW_MAP_HEIGHT;
     scene.add(light2);
-
     var loader = new THREE.RGBELoader();
     loader.load('./hdr/hdr.hdr', function (texture) {
         texture.encoding = THREE.RGBEEncoding;
@@ -95,7 +94,7 @@ var SHADOW_MAP_WIDTH = 2048,
         var envMap = pmremCubeUVPacker.CubeUVRenderTarget.texture;
         // model
         var x=.025  ;
-        var loader = new THREE.GLTFLoader().setPath('./models');
+      var loader = new THREE.GLTFLoader().setPath('./models/');
         loader.load('asse.gltf', function (gltf) {
            mesh = gltf.scene;
            mesh.traverse(function (child) {
