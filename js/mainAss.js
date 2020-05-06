@@ -94,7 +94,7 @@ var SHADOW_MAP_WIDTH = 2048,
         var envMap = pmremCubeUVPacker.CubeUVRenderTarget.texture;
         // model
         var x=.025  ;
-        var loader = new THREE.GLTFLoader().setPath('./models/');
+      var loader = new THREE.GLTFLoader().setPath('./models/');
         loader.load('asse.gltf', function (gltf) {
            mesh = gltf.scene;
            mesh.traverse(function (child) {
